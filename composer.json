@@ -1,5 +1,5 @@
 {
-    "name": "baiss/view-generator",
+    "name": "baïss/view-generator",
     "description": "Ce package vise à simplifier la création de vue pour nos différents modules de nos projets laravel",
     "license": "MIT",
     "keywords": ["laravel", "crud", "controller", "crud-controller", "laravel-crud-controller", "view", "view-generator", "laravel-view-generator"],
