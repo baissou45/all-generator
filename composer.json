@@ -1,0 +1,29 @@
+{
+    "name": "Baïss/view-generator",
+    "description": "Ce package vise à simplifier la création de vue pour nos différents modules de nos projets laravel",
+    "license": "MIT",
+    "keywords": ["laravel", "crud", "controller", "crud-controller", "laravel-crud-controller", "view", "view-generator", "laravel-view-generator"],
+    "autoload": {
+        "psr-4": {
+            "Baiss\\ViewGenerator\\": "src/",
+            "Baiss\\ViewGenerator\\Test": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Taïrou Baïssou",
+            "email": "tbaissou@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "extra": {
+        "laravel": {
+            "provider": [
+                "Baiss\\ViewGenerator\\ServiceProvider"
+            ]
+        }
+    }
+}

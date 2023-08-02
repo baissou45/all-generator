@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Baiss\ViewGenerator\Traits\Crud\CrudTrait;
+
+class #controller extends Controller {
+    use CrudTrait;
+
+    public static function validation($update = false){
+        if($update){
+            // Store validation
+            return [];
+        } else {
+            // Update validation
+            return [];
+        }
+    }
+}

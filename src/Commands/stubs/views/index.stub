@@ -1,0 +1,54 @@
+@extends("#layout")
+
+@section("#section")
+
+<div class="card">
+    <div class="card-header justify-content-between">
+        <h3 class="card-title"> #titre </h3>
+        <div class="float-end">
+            <a href="{{ route("#create_root") }}" class="btn btn-primary">
+                <i class="fa fa-plus" aria-hidden="true"></i> #create_text
+            </a>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table border text-nowrap text-md-nowrap table-striped mb-0" id="responsive-datatable">
+                <thead>
+                    <tr>
+                        #table_head
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @forelse (#models as #model)
+                        <tr>
+
+                            #table_body
+
+                            <td>
+                                <a href="#" class="mx-1 text-primary"> <i class="fa fa-eye"></i> </a>
+                                <a href="{{ route(#edit_route) }}" class="mx-1 text-secondary"> <i class="fa fa-pencil"></i> </a>
+                                <a href="#" class="mx-1 text-danger"> <i class="fa fa-trash"></i> </a>
+                            </td>
+
+                        </tr>
+                    @empty
+                        <tr class="text-center">
+                            <td colspan="#colspan"> #NoData_message </td>
+                        </tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card-footer">
+        <div class="clearfix d-flex justify-content-end">
+            {{ #models->links("pagination::bootstrap-4") }}
+        </div>
+    </div>
+</div>
+
+@endsection

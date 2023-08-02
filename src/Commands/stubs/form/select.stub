@@ -1,0 +1,8 @@
+<div class="form-group col-12 col-md-6">
+    <label for="#name"> #libelle </label>
+    <select id="#name" class="form-control" name="#name">
+        {{-- @foreach ($collection as $item)
+            <option>Text</option>
+        @endforeach --}}
+    </select>
+</div>

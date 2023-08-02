@@ -1,0 +1,3 @@
+public function #methode_name() {
+        return $this->#relation_type(#related_class::class);
+    }
