@@ -16,7 +16,7 @@ class ServiceProvider extends IlluminateServiceProvider {
     public function boot() {
         $this->publishes([
             __DIR__.'/../config/allGeneratorConfig.php' => config_path('allGeneratorConfig.php'),
-        ]);
+        ], 'all-generator-config');
 
         if ($this->app->runningInConsole()) {
             $this->commands([

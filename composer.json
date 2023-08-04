@@ -1,6 +1,6 @@
 {
     "name": "baiss/all-generator",
-    "description": "Ce package vise à simplifier la création des Controllers, Models et des vues pour nos différents modules de nos projets laravel",
+    "description": "Ce package vise à simplifier la création des Controllers, Models et des vues pour les différents modules de nos projets laravel",
     "license": "MIT",
     "keywords": ["laravel", "crud", "controller", "crud-controller", "laravel-crud-controller", "view", "view-generator", "laravel-view-generator"],
     "autoload": {
@@ -9,10 +9,13 @@
             "Baiss\\ViewGenerator\\Test\\": "tests"
         }
     },
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Taïrou Baïssou",
-            "email": "tbaissou@gmail.com"
+            "email": "tbaissou@gmail.com",
+            "homepage": "https://baissou.mega-devs.com",
+            "role": "Developper"
         }
     ],
     "require": {
@@ -24,5 +27,8 @@
                 "Baiss\\ViewGenerator\\ServiceProvider"
             ]
         }
+    },
+    "support": {
+        "issues": "https://github.com/baissou45/all-generator/issues"
     }
 }
