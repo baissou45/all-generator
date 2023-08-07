@@ -8,7 +8,7 @@ trait CrudEditTrait{
 
     public function edit($id){
         $model_name = str_replace('Controller', '', last(explode('\\', get_called_class())));
-        $this->authorize('access', strtolower($model_name) . "s.update");
+        // $this->authorize('access', strtolower($model_name) . "s.update");
 
         $model = 'App\Models\\' . $model_name;
 

@@ -8,7 +8,7 @@ trait CrudShowTrait{
 
     public function show($id){
         $model_name = str_replace('Controller', '', last(explode('\\', get_called_class())));
-        $this->authorize('access', strtolower($model_name) . "s.show");
+        // $this->authorize('access', strtolower($model_name) . "s.show");
 
         $model = 'App\Models\\' . $model_name;
 

@@ -39,14 +39,22 @@ composer require baiss/all-generator
 php artisan vendor:publish --tag=all-generator-config
 ```
 
+5. Générer vos assets
+
+```bash
+php artisan all:generate Model -a
+```
+
 
 ## Utilisation
 
-1. Ajouter la migration de votre module.
+1. Assurez-vous d'avoir publié et configurer le fichier de configuration
 
-2. Exécuter votre migration.
+2. Ajouter la migration de votre module.
 
-3. Lancer la commande ci-après, puis suiver les instructions :
+3. Exécuter votre migration.
+
+4. Lancer la commande ci-après, puis suiver les instructions :
 
 
 ```bash
