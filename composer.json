@@ -9,7 +9,6 @@
             "Baiss\\ViewGenerator\\Test\\": "tests"
         }
     },
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Taïrou Baïssou",
@@ -33,6 +32,6 @@
         "issues": "https://github.com/baissou45/all-generator/issues"
     },
     "config":{
-        "optimize-autoloader":true
+        "optimize-autoloader" : true
     }
 }
