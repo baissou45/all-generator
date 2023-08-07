@@ -2,7 +2,6 @@
 
 namespace Baiss\ViewGenerator;
 
-use Baiss\ViewGenerator\Commands\Generate;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 
 class ServiceProvider extends IlluminateServiceProvider {
@@ -18,17 +17,12 @@ class ServiceProvider extends IlluminateServiceProvider {
             __DIR__.'/../config/allGeneratorConfig.php' => config_path('allGeneratorConfig.php'),
         ], 'all-generator-config');
 
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                Generate::class
-            ]);
-        }
-
-        $this->loadViewComponentsAs('view-generator', [
-            'input' => 'Components.input',
-        ]);
+        // if ($this->app->runningInConsole()) {
+        //     $this->commands([
+        //         ALlGenerate::class
+        //     ]);
+        // }
 
         $this->loadRoutesFrom(__DIR__ . "/routes/web.php");
-        // $this->
     }
 }

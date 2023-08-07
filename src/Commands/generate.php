@@ -2,6 +2,9 @@
 
 namespace Baiss\ViewGenerator\Commands;
 
+use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
 use Baiss\ViewGenerator\Commands\Services\ControllerGeneratorService;
 use Baiss\ViewGenerator\Commands\Services\CreateGeneratorService;
 use Baiss\ViewGenerator\Commands\Services\EditGeneratorService;
@@ -9,9 +12,6 @@ use Baiss\ViewGenerator\Commands\Services\FormGeneratorService;
 use Baiss\ViewGenerator\Commands\Services\IndexGeneratorService;
 use Baiss\ViewGenerator\Commands\Services\ModelGeneratorService;
 use Baiss\ViewGenerator\Commands\Services\RouteGeneratorService;
-use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Str;
 
 class Generate extends Command {
 

@@ -3,9 +3,7 @@
 namespace Baiss\ViewGenerator\Commands\Services;
 
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str;
 
-// class ControllerGeneratorService implements GeneratorContrat {
 class ControllerGeneratorService {
 
     /**
