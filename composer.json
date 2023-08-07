@@ -9,13 +9,12 @@
             "Baiss\\ViewGenerator\\Test\\": "tests"
         }
     },
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Taïrou Baïssou",
             "email": "tbaissou@gmail.com",
             "homepage": "https://baissou.mega-devs.com",
-            "role": "Developper"
+            "role": "Developper Flutter | Laravel"
         }
     ],
     "require": {
