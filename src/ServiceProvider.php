@@ -17,11 +17,11 @@ class ServiceProvider extends IlluminateServiceProvider {
             __DIR__.'/../config/allGeneratorConfig.php' => config_path('allGeneratorConfig.php'),
         ], 'all-generator-config');
 
-        // if ($this->app->runningInConsole()) {
-        //     $this->commands([
-        //         ALlGenerate::class
-        //     ]);
-        // }
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                ALlGenerate::class
+            ]);
+        }
 
         $this->loadRoutesFrom(__DIR__ . "/routes/web.php");
     }
