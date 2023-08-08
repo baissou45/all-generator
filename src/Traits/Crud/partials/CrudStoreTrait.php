@@ -19,17 +19,17 @@ trait CrudStoreTrait{
                 $data['password'] = bcrypt($request->password);
             }
 
-            // if (request()->hasFile(request()->file_name)) {
-            //     if(is_array(request()[request()->file_name])){
-            //         $saved_file = [];
-            //         foreach (request()[request()->file_name] as $key => $file) {
-            //             array_push($saved_file, save_file(request()->file_save_path, $file));
-            //         }
-            //         $data[request()->file_name] = json_encode($saved_file);
-            //     } else {
-            //         $data[request()->file_name] = save_file(request()->file_save_path, request()[request()->file_name]);
-            //     }
-            // }
+            if (request()->hasFile(request()->file_name)) {
+                if(is_array(request()[request()->file_name])){
+                    $saved_file = [];
+                    foreach (request()[request()->file_name] as $key => $file) {
+                        array_push($saved_file, save_file(request()->file_save_path, $file));
+                    }
+                    $data[request()->file_name] = json_encode($saved_file);
+                } else {
+                    $data[request()->file_name] = save_file(request()->file_save_path, request()[request()->file_name]);
+                }
+            }
 
             $model::create($data);
             if (request()->crud_redirect) {

@@ -4,6 +4,9 @@
     "license": "MIT",
     "keywords": ["laravel", "crud", "controller", "crud-controller", "laravel-crud-controller", "view", "view-generator", "laravel-view-generator"],
     "autoload": {
+        "files": [
+            "src/helper.php"
+        ],
         "psr-4": {
             "Baiss\\ViewGenerator\\": "src/",
             "Baiss\\ViewGenerator\\Test\\": "tests"

@@ -1,7 +1,7 @@
 # All Generator
 
-<!-- [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) -->
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://semver.org)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Le package **baiss/all-generate** est conçu pour simplifier la génération complète de CRUD (Create, Read, Update, Delete) dans une application Laravel. Il automatise la création de contrôleurs, de modèles et de ressources d'interface utilisateur pour la gestion de modules en utilisant les modèles liés aux migrations. Cela vous permet de gagner du temps lors du développement en automatisant les tâches répétitives.
 
@@ -32,12 +32,14 @@ composer require baiss/all-generator
 ],
 ```
 
-4. Publiez les ressources de configuration et personnalisez-les:
+4. Publiez les ressources de configuration et de vues:
 
 
 ```bash
-php artisan vendor:publish --tag=all-generator-config
+php artisan vendor:publish -tag=all-generate
 ```
+Penser à changer la configuration du package dans config/allGeneratorConfig.php.
+
 
 5. Générer vos assets
 
@@ -116,8 +118,7 @@ En lancant la commande de génération pour le model User par exemple, il vous s
 
 Des ressources supplémentaires peuvent aussi etres trouvée en suivant les liens ci-après:
 
-<!-- - [Powerful dependency injection container](https://laravel.com/docs/container).
-- [Powerful dependency injection container](https://laravel.com/docs/container). -->
+- [Post medium : De l’Installation de Laravel à la Génération Automatique de Modules avec baiss/all-generator](https://laravel.com/docs/container).
 
 ## Contribuer
 

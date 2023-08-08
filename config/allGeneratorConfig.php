@@ -20,8 +20,8 @@ return [
     |
     */
 
-    'layout' => 'layouts.back.blanc',
-    'section' => 'content',
+    'layout' => 'vendor.all-generator.layout.blanc',
+    'section' => 'contenu',
 
     /*
     |--------------------------------------------------------------------------

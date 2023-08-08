@@ -18,13 +18,13 @@
                 <thead>
                     <tr>
                         #table_head
+                        <th> Action </th>
                     </tr>
                 </thead>
                 <tbody>
 
                     @forelse (#models as #model)
                         <tr>
-
                             #table_body
 
                             <td>
